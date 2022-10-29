@@ -1,0 +1,119 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #e0e8ff;
+  overflow: hidden;
+  text-align: center;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.card__container {
+  position: relative;
+  min-height: 100vh;
+}
+.card {
+  margin: auto;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  min-height: 75vh;
+  left: 50%;
+  width: 90%;
+  max-width: 20.4375em;
+  transform: translate(-50%, -50%);
+  border-radius: 1em;
+  box-shadow: 0 14px 20px rgba(145, 142, 142, 0.25);
+}
+
+.card__image {
+  width: 100%;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+.card__header {
+  padding: 1em;
+}
+.card__body {
+  padding: 0.5em;
+  line-height: 1.5em;
+  color: #717fa6;
+  font-size: 0.9375em;
+}
+
+.card__title {
+  font-size: 1.375em;
+}
+
+.card__actions {
+  background-color: #f7f9ff;
+  width: 80%;
+  margin: auto;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.card__aside {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn--change {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  outline: inherit;
+  color: #382ae1;
+  font-weight: bold;
+  font-family: "Red Hat Display", sans-serif;
+  text-decoration: underline;
+}
+
+.card__figure {
+  display: flex;
+  margin-right: 1em;
+  flex-direction: column;
+}
+
+.card__annual-plan {
+  font-size: 0.875em;
+  font-weight: bold;
+}
+.card__price {
+  color: #717fa6;
+  font-size: 0.875em;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  gap: 1em;
+  padding: 2em;
+  font-family: "Red Hat Display", sans-serif;
+  cursor: pointer;
+}
+.btn__payment {
+  background-color: #382ae1;
+  color: white;
+  border: none;
+  border-radius: 1em;
+  padding: 1em;
+  font-weight: bold;
+  box-shadow: 0 0 14px #717fa6;
+}
+.btn__cancel-order {
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  color: #717fa6;
+  font-size: 0.9375em;
+}
