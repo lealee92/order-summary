@@ -34,34 +34,47 @@
     </style>
   </head>
   <body>
-    <div class="card">
-      <img
-        src="/images/illustration-hero.svg"
-        alt="img-hero"
-        class="card__image"
-      />
-      <div class="card__header">
-        <h1 class="card__title">Order Summary</h1>
-      </div>
+    <div class="card__container">
+      <div class="card">
+        <img
+          src="/images/illustration-hero.svg"
+          alt="img-hero"
+          class="card__image"
+        />
+        <div class="card__header">
+          <h1 class="card__title">Order Summary</h1>
+        </div>
 
-      <p class="card__body">
-        You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!
-      </p>
-      <div class="card__footer">
+        <p class="card__body">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
         <div class="card__actions">
-          Annual Plan $59.99/year Change
-          <button>Proceed to Payment</button>
-          <button>Cancel Order</button>
+          <div class="card__aside">
+            <img
+              src="./images/icon-music.svg"
+              alt="icon-music"
+              class="icon-music"
+            />
+            <div class="card__figure">
+              <span class="card__annual-plan"> Annual Plan </span>
+              <span class="card__price">$59.99/ year </span>
+            </div>
+
+            <button class="btn--change">Change</button>
+          </div>
+        </div>
+        <div class="btn">
+          <button class="btn__payment">Proceed to Payment</button>
+          <button class="btn__cancel-order">Cancel Order</button>
         </div>
       </div>
-
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
 </html>
