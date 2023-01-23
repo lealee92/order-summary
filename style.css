@@ -1,8 +1,11 @@
 body {
   font-family: "Red Hat Display", sans-serif;
-  background-color: #e0e8ff;
   overflow: hidden;
   text-align: center;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  height: 100%;
 }
 
 *,
@@ -12,20 +15,21 @@ body {
   margin: 0;
   padding: 0;
 }
+/* pour centrer verticallement  */
 .card__container {
   position: relative;
   min-height: 100vh;
 }
+
 .card {
   margin: auto;
   background-color: white;
   position: absolute;
   top: 50%;
-  min-height: 75vh;
   left: 50%;
-  width: 90%;
-  max-width: 20.4375em;
   transform: translate(-50%, -50%);
+  min-width: 27em;
+  max-width: 27em;
   border-radius: 1em;
   box-shadow: 0 14px 20px rgba(145, 142, 142, 0.25);
 }
@@ -36,25 +40,32 @@ body {
   border-top-left-radius: 1em;
 }
 .card__header {
-  padding: 1em;
+  margin: auto;
 }
 .card__body {
-  padding: 0.5em;
   line-height: 1.5em;
-  color: #717fa6;
+  padding: 0.8em;
+  max-width: 80%;
   font-size: 0.9375em;
+  color: #717fa6;
+  margin: auto;
 }
 
 .card__title {
   font-size: 1.375em;
+  color: #1f2e55;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 0.5em;
 }
 
 .card__actions {
-  background-color: #f7f9ff;
-  width: 80%;
   margin: auto;
   border-radius: 1em;
   padding: 1em;
+  background-color: #f7f9ff;
+  width: 80%;
 }
 
 .card__aside {
@@ -76,6 +87,12 @@ body {
   text-decoration: underline;
 }
 
+.btn--change:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #766cf1;
+}
+
 .card__figure {
   display: flex;
   margin-right: 1em;
@@ -85,16 +102,17 @@ body {
 .card__annual-plan {
   font-size: 0.875em;
   font-weight: bold;
+  color: #1f2e55;
 }
 .card__price {
   color: #717fa6;
   font-size: 0.875em;
+  line-height: 1.5em;
 }
 
 .btn {
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin: auto;
   gap: 1em;
   padding: 2em;
@@ -106,14 +124,35 @@ body {
   color: white;
   border: none;
   border-radius: 1em;
+  margin: auto;
+  width: 94%;
   padding: 1em;
   font-weight: bold;
-  box-shadow: 0 0 14px #717fa6;
+  box-shadow: 0 10px 14px #717fa6;
+}
+.btn__payment:hover {
+  background-color: #766cf1;
+  cursor: pointer;
 }
 .btn__cancel-order {
   border: none;
+  cursor: pointer;
+  width: 94%;
   background-color: white;
   font-weight: bold;
+  margin: auto;
   color: #717fa6;
   font-size: 0.9375em;
+  padding-top: 1em;
+}
+.btn__cancel-order:hover {
+  color: #1f2e55;
+  cursor: pointer;
+}
+
+@media (max-width: 414px) {
+  /* For mobile phones: */
+  .card {
+    margin: 2em;
+  }
 }
