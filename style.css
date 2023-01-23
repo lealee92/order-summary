@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   background-color: #e0e8ff;
   height: 100%;
+  margin: 0;
 }
 
 *,
@@ -28,7 +29,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 27em;
   max-width: 27em;
   border-radius: 1em;
   box-shadow: 0 14px 20px rgba(145, 142, 142, 0.25);
@@ -36,6 +36,7 @@ body {
 
 .card__image {
   width: 100%;
+
   border-top-right-radius: 1em;
   border-top-left-radius: 1em;
 }
@@ -153,6 +154,6 @@ body {
 @media (max-width: 414px) {
   /* For mobile phones: */
   .card {
-    margin: 2em;
+    width: 80%;
   }
 }
